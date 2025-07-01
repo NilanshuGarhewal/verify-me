@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# ✅ Verify Me - Fake Instagram Profile Detector
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Verify Me** is a smart web app that helps you detect if an Instagram profile looks suspicious, neutral, or legit — based on a set of smart metrics. Just paste the profile URL, and let the system analyze it for you.
 
-## Available Scripts
+> ⚠️ *Only Instagram public profiles are supported at the moment.*
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧠 How It Works
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app takes in an Instagram profile URL and analyzes it based on:
+- Follower-to-following ratio
+- Number of posts
+- Presence of profile picture
+- Bio and full name completeness
+- Verification status vs. follower count
+- Use of keywords like “official”
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Then it categorizes the profile as:
+- ✅ **Good**: Looks normal and trustworthy  
+- ⚠️ **Neutral**: Could be incomplete or low-effort  
+- 🚨 **Bad**: Suspicious AF
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Project Structure
 
-### `npm run build`
+verify-me/
+├── backend/
+│ ├── index.js # Express backend + Instagram API logic
+│ ├── .env # Sensitive keys (not pushed)
+│ └── package.json
+│
+├── fake-social-detector/ # React frontend
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ └── App.js
+│ └── package.json
+│
+└── README.md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
+- React + React Router
+- Axios for API calls
+- Custom UI with smooth animations
 
-### `npm run eject`
+### Backend
+- Node.js + Express
+- Instagram Scraper API (via RapidAPI)
+- Middleware-based data analysis logic
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js installed
+- A RapidAPI account with access to the **Instagram Scraper** API
 
-## Learn More
+### Clone the Repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/NilanshuGarhewal/verify-me.git
+cd verify-me
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🔧 Backend Setup
+cd backend
+npm install
+Create a .env file inside backend/:
 
-### Code Splitting
+env
+RAPIDAPI_KEY=your_key_here
+RAPIDAPI_HOST=your_host_here
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start the backend:
+node index.js
 
-### Analyzing the Bundle Size
+💻 Frontend Setup
+cd fake-social-detector
+npm install
+npm start
+Open http://localhost:3000 in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🧪 Testing
+You can test with valid Instagram URLs, like:
 
-### Making a Progressive Web App
+https://www.instagram.com/suspect_account123/
+The app will display a detailed analysis result on a result page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📸 Screenshots (optional)
+Add some cool UI screenshots here later.
 
-### Advanced Configuration
+🙏 Acknowledgements
+RapidAPI - Instagram Scraper API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Inspiration: Fake account detection logic from Reddit + personal experiences 😎
 
-### Deployment
+🔒 License
+This project is open-source and free to use. Add a license if needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🤙 Author
+Made with 💙 by Nilanshu Garhewal
+Stay real, stay safe — even online.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+Ask ChatGPT
