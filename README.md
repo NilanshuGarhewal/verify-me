@@ -25,6 +25,7 @@ Then it categorizes the profile as:
 
 ## 📁 Project Structure
 
+```
 verify-me/
 ├── backend/
 │ ├── index.js # Express backend + Instagram API logic
@@ -40,6 +41,7 @@ verify-me/
 │ └── package.json
 │
 └── README.md
+```
 
 ---
 
@@ -108,12 +110,3 @@ This project is open-source and free to use. Add a license if needed.
 🤙 Author
 Made with 💙 by Nilanshu Garhewal
 Stay real, stay safe — even online.
-
-
-
-
-
-
-
-
-Ask ChatGPT
