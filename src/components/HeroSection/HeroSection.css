@@ -1,0 +1,38 @@
+#hero-section {
+  width: 100%;
+  height: calc(100vh - 20px - 30px - 30px);
+  padding: 100px 100px 0;
+}
+
+#hero-box {
+  width: 100%;
+  height: auto;
+}
+
+.h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 p {
+  font-size: 64px;
+  font-family: "verify_me", serif;
+}
+
+.unique {
+  font-style: italic;
+  color: var(--color-light);
+}
+
+.h3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

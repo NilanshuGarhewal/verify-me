@@ -1,0 +1,38 @@
+.details {
+  width: 60%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.heading-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.heading-box p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.heading-box > p > span {
+  font-family: "verify_me", serif;
+  color: var(--color-light);
+  font-weight: normal;
+}
+
+.heading-line {
+  flex: 1;
+  height: 2px;
+  background-color: var(--color-text);
+  opacity: 30%;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text);
+  opacity: 30%;
+}

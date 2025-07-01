@@ -1,0 +1,25 @@
+.retro-err {
+  width: auto;
+  height: auto;
+  border: 2px solid #cc0000;
+  background-color: #cc000010;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: fixed;
+  top: 100px;
+  right: -300px; /* start off-screen */
+  animation: slideIn 0.4s ease-out forwards;
+  z-index: 999;
+  font-weight: 500;
+  color: #cc0000;
+  backdrop-filter: blur(3px);
+}
+
+@keyframes slideIn {
+  to {
+    right: 100px; /* end position */
+  }
+}

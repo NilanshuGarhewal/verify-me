@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+/* mandatory stuff */
+@font-face {
+  font-family: "verify me";
+  src: url("./assets/junicode_font/Junicode-Regular.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-background: #1f1f1f;
+  --color-text: #d1cfc0;
+  --color-dark: #121212;
+  --color-light: #f76f53;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
-.App-link {
-  color: #61dafb;
+#root::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

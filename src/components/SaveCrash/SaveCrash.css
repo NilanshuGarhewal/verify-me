@@ -1,0 +1,11 @@
+.save-crash {
+  width: 60%;
+  height: auto;
+  border: 2px solid #cc0000;
+  background-color: #cc000010;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
